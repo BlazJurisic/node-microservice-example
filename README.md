@@ -12,11 +12,11 @@ Listens on port `8960` by default.
 
 ### Endpoints
 
-    * **Registration**
-      * **Method**: `POST`
-      * **URI**: `/users/:username
-      * **Payload**: Must contain a `password` and a `passwordAgain` field.
-      * **Response**: `201 - Created` upon success, `400 - Bad Request` if the registration fails.
+  * **Registration**
+    * **Method**: `POST`
+    * **URI**: `/users/:username
+    * **Payload**: Must contain a `password` and a `passwordAgain` field.
+    * **Response**: `201 - Created` upon success, `400 - Bad Request` if the registration fails.
 
 ## Check Password Microservice
 
@@ -26,11 +26,11 @@ Listens on port `8970` by default.
 
 ### Endpoints
 
-    * **Check**
-      * **Method**: `POST`
-      * **URI**: `/password/check`
-      * **Payload**: Must contain a `password` and a `passwordAgain` field.
-      * **Response**: `204 - No Content` upon success, `400 - Bad Request` if the validation fails.
+  * **Check**
+    * **Method**: `POST`
+    * **URI**: `/password/check`
+    * **Payload**: Must contain a `password` and a `passwordAgain` field.
+    * **Response**: `204 - No Content` upon success, `400 - Bad Request` if the validation fails.
 
 ## Check Username Microservice
 
@@ -40,10 +40,10 @@ Listens on port `8980` by default.
 
 ### Endpoints
 
-    * **Check**
-      * **Method**: `GET`
-      * **URI**: `/users/:username/check`
-      * **Response**: `204 - No Content` upon success, `409 - Conflict` if the username exists.
+  * **Check**
+    * **Method**: `GET`
+    * **URI**: `/users/:username/check`
+    * **Response**: `204 - No Content` upon success, `409 - Conflict` if the username exists.
 
 ## User Entity Service
 
@@ -53,7 +53,7 @@ Listens on port `8990` by default.
 
 ### Endpoints
 
-    * **Check**
-      * **Method**: `GET`
-      * **URI**: `/users/:username`
-      * **Response**: `200 - OK` upon success, `404 - Not Found` if the user does not exist.
+  * **Check**
+    * **Method**: `GET`
+    * **URI**: `/users/:username`
+    * **Response**: `200 - OK` upon success, `404 - Not Found` if the user does not exist.
