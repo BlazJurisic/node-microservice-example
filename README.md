@@ -14,7 +14,7 @@ Listens on port `8960` by default.
 
   * **Registration**
     * **Method**: `POST`
-    * **URI**: `/users/:username
+    * **URI**: `/users/:username`
     * **Payload**: Must contain a `password` and a `passwordAgain` field.
     * **Response**: `201 - Created` upon success, `400 - Bad Request` if the registration fails.
 
@@ -53,7 +53,7 @@ Listens on port `8990` by default.
 
 ### Endpoints
 
-  * **Check**
+  * **Get By Username**
     * **Method**: `GET`
     * **URI**: `/users/:username`
     * **Response**: `200 - OK` upon success, `404 - Not Found` if the user does not exist.
