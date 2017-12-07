@@ -1,0 +1,16 @@
+{
+  "name": "@node-microservice-example/node",
+  "version": "1.0.0",
+  "description": "User Entity Service.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Attila Bagossy",
+  "license": "MIT",
+  "dependencies": {
+    "convict": "^4.0.2",
+    "express": "^4.16.2"
+  }
+}
